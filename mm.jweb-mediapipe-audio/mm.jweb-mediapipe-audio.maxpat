@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 68.0, 89.0, 1066.0, 679.0 ],
+		"rect" : [ 68.0, 87.0, 1066.0, 679.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,43 +40,118 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"dontreplace" : 1,
-					"id" : "obj-12",
+					"id" : "obj-29",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 839.0, 367.476216167211533, 50.0, 22.0 ],
-					"text" : "0"
+					"patching_rect" : [ 945.0, 288.0, 108.0, 22.0 ],
+					"text" : "Speech 0.109"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"dontreplace" : 1,
-					"id" : "obj-11",
-					"maxclass" : "message",
-					"numinlets" : 2,
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 781.0, 367.476216167211533, 50.0, 22.0 ],
-					"text" : "0.004"
+					"patching_rect" : [ 918.5, 466.0, 73.0, 22.0 ],
+					"text" : "prepend get"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-10",
+					"id" : "obj-26",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 931.0, 431.0, 136.0, 22.0 ],
+					"text" : "Speech"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 766.0, 315.0, 176.0, 22.0 ],
+					"patching_rect" : [ 867.0, 243.0, 41.0, 22.0 ],
+					"text" : "unjoin"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 867.0, 208.0, 134.0, 22.0 ],
+					"text" : "loadmess getkeys clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 891.0, 325.0, 25.0, 22.0 ],
+					"text" : "iter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 891.0, 358.0, 96.0, 22.0 ],
+					"text" : "prepend append"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"items" : [ "A capella", ",", "Accelerating, revving, vroom", ",", "Accordion", ",", "Acoustic guitar", ",", "Afrobeat", ",", "Air brake", ",", "Air conditioning", ",", "Air horn, truck horn", ",", "Aircraft", ",", "Aircraft engine", ",", "Alarm", ",", "Alarm clock", ",", "Ambient music", ",", "Ambulance (siren)", ",", "Angry music", ",", "Animal", ",", "Applause", ",", "Arrow", ",", "Artillery fire", ",", "Babbling", ",", "Baby cry, infant cry", ",", "Baby laughter", ",", "Background music", ",", "Bagpipes", ",", "Bang", ",", "Banjo", ",", "Bark", ",", "Basketball bounce", ",", "Bass drum", ",", "Bass guitar", ",", "Bathtub (filling or washing)", ",", "Beatboxing", ",", "Bee, wasp, etc.", ",", "Beep, bleep", ",", "Bell", ",", "Bellow", ",", "Belly laugh", ",", "Bicycle", ",", "Bicycle bell", ",", "Bird", ",", "Bird flight, flapping wings", ",", "Bird vocalization, bird call, bird song", ",", "Biting", ",", "Bleat", ",", "Blender", ",", "Bluegrass", ",", "Blues", ",", "Boat, Water vehicle", ",", "Boiling", ",", "Boing", ",", "Boom", ",", "Bouncing", ",", "Bow-wow", ",", "Bowed string instrument", ",", "Brass instrument", ",", "Breaking", ",", "Breathing", ",", "Burping, eructation", ",", "Burst, pop", ",", "Bus", ",", "Busy signal", ",", "Buzz", ",", "Buzzer", ",", "Cacophony", ",", "Camera", ",", "Canidae, dogs, wolves", ",", "Cap gun", ",", "Car", ",", "Car alarm", ",", "Car passing by", ",", "Carnatic music", ",", "Cash register", ",", "Cat", ",", "Caterwaul", ",", "Cattle, bovinae", ",", "Caw", ",", "Cello", ",", "Chainsaw", ",", "Change ringing (campanology)", ",", "Chant", ",", "Chatter", ",", "Cheering", ",", "Chewing, mastication", ",", "Chicken, rooster", ",", "Child singing", ",", "Child speech, kid speaking", ",", "Children playing", ",", "Children shouting", ",", "Chime", ",", "Chink, clink", ",", "Chirp tone", ",", "Chirp, tweet", ",", "Choir", ",", "Chop", ",", "Chopping (food)", ",", "Chorus effect", ",", "Christian music", ",", "Christmas music", ",", "Chuckle, chortle", ",", "Church bell", ",", "Civil defense siren", ",", "Clang", ",", "Clapping", ",", "Clarinet", ",", "Classical music", ",", "Clatter", ",", "Clickety-clack", ",", "Clicking", ",", "Clip-clop", ",", "Clock", ",", "Cluck", ",", "Coin (dropping)", ",", "Computer keyboard", ",", "Conversation", ",", "Coo", ",", "Cough", ",", "Country", ",", "Cowbell", ",", "Crack", ",", "Crackle", ",", "Creak", ",", "Cricket", ",", "Croak", ",", "Crow", ",", "Crowd", ",", "Crowing, cock-a-doodle-doo", ",", "Crumpling, crinkling", ",", "Crunch", ",", "Crushing", ",", "Crying, sobbing", ",", "Cupboard open or close", ",", "Cutlery, silverware", ",", "Cymbal", ",", "Dance music", ",", "Dental drill, dentist's drill", ",", "Dial tone", ",", "Didgeridoo", ",", "Ding", ",", "Ding-dong", ",", "Disco", ",", "Dishes, pots, and pans", ",", "Distortion", ",", "Dog", ",", "Domestic animals, pets", ",", "Door", ",", "Doorbell", ",", "Double bass", ",", "Drawer open or close", ",", "Drill", ",", "Drip", ",", "Drum", ",", "Drum and bass", ",", "Drum kit", ",", "Drum machine", ",", "Drum roll", ",", "Dubstep", ",", "Duck", ",", "Echo", ",", "Effects unit", ",", "Electric guitar", ",", "Electric piano", ",", "Electric shaver, electric razor", ",", "Electric toothbrush", ",", "Electronic dance music", ",", "Electronic music", ",", "Electronic organ", ",", "Electronic tuner", ",", "Electronica", ",", "Emergency vehicle", ",", "Engine", ",", "Engine knocking", ",", "Engine starting", ",", "Environmental noise", ",", "Eruption", ",", "Exciting music", ",", "Explosion", ",", "Fart", ",", "Field recording", ",", "Filing (rasp)", ",", "Fill (with liquid)", ",", "Finger snapping", ",", "Fire", ",", "Fire alarm", ",", "Fire engine, fire truck (siren)", ",", "Firecracker", ",", "Fireworks", ",", "Fixed-wing aircraft, airplane", ",", "Flamenco", ",", "Flap", ",", "Flute", ",", "Fly, housefly", ",", "Foghorn", ",", "Folk music", ",", "Fowl", ",", "French horn", ",", "Frog", ",", "Frying (food)", ",", "Funk", ",", "Fusillade", ",", "Gargling", ",", "Gasp", ",", "Gears", ",", "Giggle", ",", "Glass", ",", "Glockenspiel", ",", "Goat", ",", "Gobble", ",", "Gong", ",", "Goose", ",", "Gospel music", ",", "Groan", ",", "Growling", ",", "Grunge", ",", "Grunt", ",", "Guitar", ",", "Gunshot, gunfire", ",", "Gurgling", ",", "Gush", ",", "Hair dryer", ",", "Hammer", ",", "Hammond organ", ",", "Hands", ",", "Happy music", ",", "Harmonic", ",", "Harmonica", ",", "Harp", ",", "Harpsichord", ",", "Heart murmur", ",", "Heart sounds, heartbeat", ",", "Heavy engine (low frequency)", ",", "Heavy metal", ",", "Helicopter", ",", "Hi-hat", ",", "Hiccup", ",", "Hip hop music", ",", "Hiss", ",", "Honk", ",", "Hoot", ",", "Horse", ",", "House music", ",", "Howl", ",", "Hubbub, speech noise, speech babble", ",", "Hum", ",", "Humming", ",", "Ice cream truck, ice cream van", ",", "Idling", ",", "Independent music", ",", "Insect", ",", "Inside, large room or hall", ",", "Inside, public space", ",", "Inside, small room", ",", "Jackhammer", ",", "Jazz", ",", "Jet engine", ",", "Jingle (music)", ",", "Jingle bell", ",", "Jingle, tinkle", ",", "Keyboard (musical)", ",", "Keys jangling", ",", "Knock", ",", "Laughter", ",", "Lawn mower", ",", "Light engine (high frequency)", ",", "Liquid", ",", "Livestock, farm animals, working animals", ",", "Lullaby", ",", "Machine gun", ",", "Mains hum", ",", "Mallet percussion", ",", "Mandolin", ",", "Mantra", ",", "Maraca", ",", "Marimba, xylophone", ",", "Mechanical fan", ",", "Mechanisms", ",", "Medium engine (mid frequency)", ",", "Meow", ",", "Microwave oven", ",", "Middle Eastern music", ",", "Moo", ",", "Mosquito", ",", "Motor vehicle (road)", ",", "Motorboat, speedboat", ",", "Motorcycle", ",", "Mouse", ",", "Music", ",", "Music for children", ",", "Music of Africa", ",", "Music of Asia", ",", "Music of Bollywood", ",", "Music of Latin America", ",", "Musical instrument", ",", "Narration, monologue", ",", "Neigh, whinny", ",", "New-age music", ",", "Noise", ",", "Ocean", ",", "Oink", ",", "Opera", ",", "Orchestra", ",", "Organ", ",", "Outside, rural or natural", ",", "Outside, urban or manmade", ",", "Owl", ",", "Pant", ",", "Patter", ",", "Percussion", ",", "Piano", ",", "Pig", ",", "Pigeon, dove", ",", "Ping", ",", "Pink noise", ",", "Pizzicato", ",", "Plop", ",", "Plucked string instrument", ",", "Police car (siren)", ",", "Pop music", ",", "Pour", ",", "Power tool", ",", "Power windows, electric windows", ",", "Printer", ",", "Progressive rock", ",", "Propeller, airscrew", ",", "Psychedelic rock", ",", "Pulleys", ",", "Pulse", ",", "Pump (liquid)", ",", "Punk rock", ",", "Purr", ",", "Quack", ",", "Race car, auto racing", ",", "Radio", ",", "Rail transport", ",", "Railroad car, train wagon", ",", "Rain", ",", "Rain on surface", ",", "Raindrop", ",", "Rapping", ",", "Ratchet, pawl", ",", "Rattle", ",", "Rattle (instrument)", ",", "Reggae", ",", "Reverberation", ",", "Reversing beeps", ",", "Rhythm and blues", ",", "Rimshot", ",", "Ringtone", ",", "Roar", ",", "Roaring cats (lions, tigers)", ",", "Rock and roll", ",", "Rock music", ",", "Rodents, rats, mice", ",", "Roll", ",", "Rowboat, canoe, kayak", ",", "Rub", ",", "Rumble", ",", "Run", ",", "Rustle", ",", "Rustling leaves", ",", "Sad music", ",", "Sailboat, sailing ship", ",", "Salsa music", ",", "Sampler", ",", "Sanding", ",", "Sawing", ",", "Saxophone", ",", "Scary music", ",", "Scissors", ",", "Scrape", ",", "Scratch", ",", "Scratching (performance technique)", ",", "Screaming", ",", "Sewing machine", ",", "Shatter", ",", "Sheep", ",", "Ship", ",", "Shofar", ",", "Shout", ",", "Shuffle", ",", "Shuffling cards", ",", "Sidetone", ",", "Sigh", ",", "Silence", ",", "Sine wave", ",", "Singing", ",", "Singing bowl", ",", "Single-lens reflex camera", ",", "Sink (filling or washing)", ",", "Siren", ",", "Sitar", ",", "Sizzle", ",", "Ska", ",", "Skateboard", ",", "Skidding", ",", "Slam", ",", "Slap, smack", ",", "Sliding door", ",", "Slosh", ",", "Smash, crash", ",", "Smoke detector, smoke alarm", ",", "Snake", ",", "Snare drum", ",", "Sneeze", ",", "Snicker", ",", "Sniff", ",", "Snoring", ",", "Snort", ",", "Sonar", ",", "Song", ",", "Soul music", ",", "Sound effect", ",", "Soundtrack music", ",", "Speech", ",", "Speech synthesizer", ",", "Splash, splatter", ",", "Splinter", ",", "Spray", ",", "Squawk", ",", "Squeak", ",", "Squeal", ",", "Squish", ",", "Static", ",", "Steam", ",", "Steam whistle", ",", "Steel guitar, slide guitar", ",", "Steelpan", ",", "Stir", ",", "Stomach rumble", ",", "Stream", ",", "String section", ",", "Strum", ",", "Subway, metro, underground", ",", "Swing music", ",", "Synthesizer", ",", "Synthetic singing", ",", "Tabla", ",", "Tambourine", ",", "Tap", ",", "Tapping (guitar technique)", ",", "Tearing", ",", "Techno", ",", "Telephone", ",", "Telephone bell ringing", ",", "Telephone dialing, DTMF", ",", "Television", ",", "Tender music", ",", "Theme music", ",", "Theremin", ",", "Throat clearing", ",", "Throbbing", ",", "Thump, thud", ",", "Thunder", ",", "Thunderstorm", ",", "Thunk", ",", "Tick", ",", "Tick-tock", ",", "Timpani", ",", "Tire squeal", ",", "Toilet flush", ",", "Tools", ",", "Toot", ",", "Toothbrush", ",", "Traditional music", ",", "Traffic noise, roadway noise", ",", "Train", ",", "Train horn", ",", "Train wheels squealing", ",", "Train whistle", ",", "Trance music", ",", "Trickle, dribble", ",", "Trombone", ",", "Truck", ",", "Trumpet", ",", "Tubular bells", ",", "Tuning fork", ",", "Turkey", ",", "Typewriter", ",", "Typing", ",", "Ukulele", ",", "Vacuum cleaner", ",", "Vehicle", ",", "Vehicle horn, car horn, honking", ",", "Vibraphone", ",", "Vibration", ",", "Video game music", ",", "Violin, fiddle", ",", "Vocal music", ",", "Wail, moan", ",", "Walk, footsteps", ",", "Water", ",", "Water tap, faucet", ",", "Waterfall", ",", "Waves, surf", ",", "Wedding music", ",", "Whack, thwack", ",", "Whale vocalization", ",", "Wheeze", ",", "Whimper", ",", "Whimper (dog)", ",", "Whip", ",", "Whir", ",", "Whispering", ",", "Whistle", ",", "Whistling", ",", "White noise", ",", "Whoop", ",", "Whoosh, swoosh, swish", ",", "Wild animals", ",", "Wind", ",", "Wind chime", ",", "Wind instrument, woodwind instrument", ",", "Wind noise (microphone)", ",", "Wood", ",", "Wood block", ",", "Writing", ",", "Yell", ",", "Yip", ",", "Yodeling", ",", "Zing", ",", "Zipper (clothing)", ",", "Zither" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 878.0, 395.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "dictionary", "", "", "", "" ],
+					"patching_rect" : [ 867.0, 288.0, 67.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"legacy" : 0
+						"embed" : 0,
+						"legacy" : 1,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
 					}
 ,
-					"text" : "dict.unpack Cough: Didgeridoo:"
+					"text" : "dict parsed"
 				}
 
 			}
@@ -264,7 +339,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 500.0, 411.0, 50.0, 22.0 ],
-					"text" : "0.891"
+					"text" : "0.668"
 				}
 
 			}
@@ -325,7 +400,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 688.0, 342.0, 50.0, 22.0 ],
-					"text" : "0.004"
+					"text" : "0.008"
 				}
 
 			}
@@ -399,19 +474,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 750.0, 259.0, 102.857156038284302, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-57",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 750.0, 189.0, 69.0, 22.0 ],
-					"text" : "get Speech"
+					"patching_rect" : [ 728.0, 216.0, 102.857156038284302, 22.0 ],
+					"text" : "Speech 0.059"
 				}
 
 			}
@@ -422,7 +486,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 5,
 					"outlettype" : [ "dictionary", "", "", "", "" ],
-					"patching_rect" : [ 750.0, 227.0, 61.0, 22.0 ],
+					"patching_rect" : [ 659.0, 216.0, 67.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"legacy" : 0,
@@ -430,7 +494,7 @@
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "dict"
+					"text" : "dict parsed"
 				}
 
 			}
@@ -443,7 +507,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 623.0, 342.0, 50.0, 22.0 ],
-					"text" : "0.332"
+					"text" : "0.148"
 				}
 
 			}
@@ -456,7 +520,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 563.0, 342.0, 50.0, 22.0 ],
-					"text" : "0.004"
+					"text" : "0"
 				}
 
 			}
@@ -469,7 +533,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 511.0, 342.0, 50.0, 22.0 ],
-					"text" : "0.02"
+					"text" : "0.059"
 				}
 
 			}
@@ -594,15 +658,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 1 ],
-					"source" : [ "obj-10", 0 ]
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-13", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 1 ],
-					"source" : [ "obj-10", 1 ]
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -624,23 +695,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"order" : 0,
-					"source" : [ "obj-17", 0 ]
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"order" : 2,
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
 					"order" : 1,
 					"source" : [ "obj-17", 0 ]
 				}
@@ -648,8 +710,68 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"order" : 0,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 1 ],
+					"order" : 0,
+					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"order" : 1,
+					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-25", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 1 ],
+					"source" : [ "obj-25", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"midpoints" : [ 928.0, 511.0, 858.5, 511.0, 858.5, 277.0, 876.5, 277.0 ],
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -715,13 +837,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-59", 1 ],
 					"source" : [ "obj-55", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
-					"source" : [ "obj-57", 0 ]
 				}
 
 			}
